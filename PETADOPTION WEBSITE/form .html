@@ -1,0 +1,93 @@
+<html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .form-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="radio"] {
+        margin-top: 10px;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
+</style>
+
+<form>
+
+<div id="myModal" class="container">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+        <label for="pname">Petname:</label>
+        <input type="text" name="pname"><br>
+        <label for="Aname">Adoptee name: </label>
+        <input type="text" name="Aname"><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email"><br>
+        <label for="phone number">Phone number:</label>
+        <input type="text" name="phone number"><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address"><br>
+        <label for="date">Date of adoption:</label>
+        <input type="date" id="datemin" name="datemin" ><br><br>
+        <input type="radio" name="agreement"> I hereby adhere by the rules of adoption<br><br>
+        <input type="submit" value="Apply for adoption">
+    </form>
+  </div>
+
+</div>
+
+
+</body>
+</form>
+</html>
+
